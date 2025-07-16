@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kachi | Frontend Developer</title>
+    <meta name="description" content="Kachi's portfolio">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Kachi</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button id="themeToggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hey, I'm Kachi</h1>
+        <p>I build clean and interactive frontend web experiences that are fast, modern, and user-friendly.</p>
+        <div class="cta-buttons">
+            <a href="#projects" class="btn primary">View Projects <i class="fas fa-angle-double-down"></i></a>
+            <a href="assets/Kachi_Resume.pdf" class="btn outline" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-inner">
+            <div class="profile-card">
+                <img src="assets/images/black.png" alt="Kachi's photo" />
+            </div>
+            <div class="about-details">
+                <h2>Hi, I'm Kachi 👋</h2>
+                <p>
+                    I’m a frontend developer passionate about turning ideas into interactive, accessible, and user-friendly
+                    interfaces.
+                    I focus on clean code, smooth user flows, and responsive layouts. Let’s build something amazing
+                    together.
+                </p>
+                <div class="skills-grid">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript (ES6+)</span>
+                    <span>Git & GitHub</span>
+                    <span>Bootstrap</span>
+                    <span>Responsive Design</span>
+                    <span>UI Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id="projects" class="projects-section">
+        <div class="projects-container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <!-- Project Card-1 -->
+            <div class="project-card">
+              <img src="assets/images/dashboard.jpg" alt="Dashboard Project" />
+              <div class="project-info">
+                <h3>Admin Dashboard</h3>
+                <p>A responsive, theme-switchable dashboard with interactive UI, built with HTML, CSS, and vanilla JS.</p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://on2onyekachi.github.io/Dashboard" target="_blank">Live Demo</a>
+                  <a href="https://github.com/on2onyekachi/Dashboard" target="_blank">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <!-- Project Card-2 -->
+            <div class="project-card">
+                <img src="assets/images/on2onyekachi.png" alt="Old portfolio project preview" />
+                <div class="project-info">
+                    <h3>Portfolio (2022)</h3>
+                    <p>My first web portfolio built with Bootstrap and jQuery. Showcases my early frontend skills and growth
+                        journey.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>jQuery</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://on2onyekachi.netlify.app" target="_blank">Live Demo</a>
+                        <a href="https://github.com/on2onyekachi/on2onyekachi" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="contact-grid">
+            <!-- Left: Connect With Me -->
+            <div class="contact-info">
+                <h3>Let's Get In Touch</h3>
+                <p>I'm always open to opportunities, freelance gigs, or just chatting and making new friends. I keep improving for ways to stay informed on the lastest technologies. Feel free to reach out to me..</p>
+                <ul class="contact-socials">
+                    <li><a href="mailto:onyekachion2@gmail.com"><i class="fas fa-envelope"></i>mail me</a></li>
+                    <li><a href="https://github.com/on2onyekachi" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/onyekachi-okwuolisa" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                    <li><a href="https://twitter.com/kachi_okwuolisa" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
+                </ul>
+            </div>
+            <!-- Right: Contact Form -->
+            <div class="contact-form-wrapper">
+                <h3>Send a Message <i class="fas fa-paper-plane"></i> </h3>
+                <form name="contact" method="POST" data-netlify="true">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Hi Kachi" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                </form>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>© 2025 Onyekachi Okwuolisa. All rights reserved.</p>
+    </footer>      
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
