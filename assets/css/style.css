@@ -233,13 +233,14 @@ nav a {
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
 .project-card img {
@@ -263,6 +264,7 @@ nav a {
     font-size: 0.95rem;
     color: var(--dark);
     margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .project-tags {
@@ -275,7 +277,7 @@ nav a {
 .project-tags span {
     background: var(--primary);
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     padding: 0.3rem 0.7rem;
     border-radius: 999px;
 }
@@ -286,10 +288,12 @@ nav a {
     color: var(--primary);
     margin-right: 1rem;
     font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
 .project-links a:hover {
-    text-decoration: underline;
+    color: #1d4ed8;
+    border-bottom: 2px solid var(--primary);
 }
 
 /* contact section */
@@ -328,6 +332,8 @@ nav a {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .contact-socials li {
@@ -400,4 +406,16 @@ textarea:focus {
     font-size: 0.95rem;
     padding: 2rem 1rem;
     margin-top: 4rem;
+}
+@media (max-width: 640px) {
+    header{
+        flex-direction: column;
+    }
+    .projects-grid,
+    .contact-grid{
+        grid-template-columns: 1fr;
+    }
+    .contact-grid{
+        padding: 1.5rem;
+    }
 }
