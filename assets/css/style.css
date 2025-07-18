@@ -415,6 +415,9 @@ textarea:focus {
     .logo{
         font-size: 1.3rem;
     }
+    .hero{
+        padding: 6rem 1rem;
+    }
     .hero h1{
         font-size: 2rem;
     }
