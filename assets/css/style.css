@@ -3,13 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --primary: #3b82f6;
-    --secondary: #5c0722;
     --dark: #141a2d;
     --light: #f9fafb;
-    --accent: #9333ea;
-    
+
     /* Light Theme Variation */
     --body-bg: linear-gradient(135deg, #f0f2f5, #e4e7f0);
     --text-color: #111827;
@@ -19,6 +18,7 @@ body.dark-mode {
     --body-bg: linear-gradient(135deg, #1f2937, #1a1a1a);
     --text-color: #e5ebf1;
 }
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -71,7 +71,8 @@ nav a {
     background: var(--primary);
     color: white;
 }
-.fa-moon{
+
+.fa-moon {
     margin-left: -0.5rem;
 }
 
@@ -98,6 +99,7 @@ nav a {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .btn {
@@ -129,12 +131,14 @@ nav a {
     color: white;
 }
 
+.fa-angle-double-down {
+    margin-left: 0.2rem;
+}
+
 /* About setion */
 
 .about-section {
     padding: 5rem 2rem;
-    /* background: linear-gradient(to right, #f9fafb, #f3f4f6); */
-    /* background: var(--body-bg); */
 }
 
 .about-inner {
@@ -154,8 +158,9 @@ nav a {
 }
 
 .profile-card img {
-    width: 240px;
-    height: 240px;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
     object-fit: cover;
     border-radius: 12px;
     border: 6px solid white;
@@ -184,23 +189,24 @@ nav a {
     margin-bottom: 2rem;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.skills-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 0.75rem;
 }
 
-.skills-grid span {
+.skills-list span {
     background-color: #3b82f6;
     color: white;
-    padding: 0.5rem 0.75rem;
-    border-radius: 999px;
-    font-size: 0.9rem;
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
     text-align: center;
     transition: background 0.3s;
 }
 
-.skills-grid span:hover {
+.skills-list span:hover {
     background-color: #2563eb;
 }
 
@@ -277,9 +283,9 @@ nav a {
 .project-tags span {
     background: var(--primary);
     color: white;
-    font-size: 0.75rem;
-    padding: 0.3rem 0.7rem;
-    border-radius: 999px;
+    font-size: 0.7rem;
+    padding: 0.15rem 0.7rem;
+    border-radius: 50px;
 }
 
 .project-links a {
@@ -339,7 +345,8 @@ nav a {
 .contact-socials li {
     margin-bottom: 0.8rem;
 }
-.contact-socials i{
+
+.contact-socials i {
     margin-right: 0.5rem;
 }
 
@@ -398,6 +405,7 @@ textarea:focus {
 .submit-btn:hover {
     background: #2563eb;
 }
+
 /* FOOTER */
 .site-footer {
     background: var(--background);
@@ -407,32 +415,67 @@ textarea:focus {
     padding: 2rem 1rem;
     margin-top: 4rem;
 }
-@media (max-width: 640px) {
-    header{
+
+/* Responsive Design (Media Query) */
+@media screen and (max-width: 861px) {
+    .about-details h2{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    header {
         flex-direction: column;
         gap: 0.8rem;
+        padding: 1.5rem 1rem;
     }
-    .logo{
+
+    .logo {
         font-size: 1.3rem;
     }
-    .hero{
+
+    .hero {
         padding: 6rem 1rem;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 2rem;
     }
+
     .hero p {
         font-size: 1rem;
     }
-    .btn{
-        padding: 0.5rem;
+
+    .btn {
+        padding: 0.5rem 0.8rem;
         font-size: 0.8rem;
     }
+
     .projects-grid,
-    .contact-grid{
+    .contact-grid {
         grid-template-columns: 1fr;
     }
-    .contact-grid{
+
+    .contact-grid {
         padding: 1.5rem;
+    }
+    .contact-info h3,
+    .contact-form-wrapper h3 {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:499px) {
+    .about-section,
+    .projects-section,
+    .contact-section{
+        padding: 5rem 1rem;
+    }
+}
+@media screen and (max-width: 320px){
+    nav{
+        gap: 0.5rem;
+    }
+    .btn{
+        flex-grow: 1;
     }
 }
