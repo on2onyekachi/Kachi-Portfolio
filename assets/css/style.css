@@ -13,6 +13,9 @@
     --body-bg: linear-gradient(135deg, #f0f2f5, #e4e7f0);
     --text-color: #111827;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body.dark-mode {
     --body-bg: linear-gradient(135deg, #1f2937, #1a1a1a);
@@ -25,7 +28,6 @@ body {
     background: var(--body-bg);
     color: var(--text-color);
     transition: background 0.3s ease, color 0.3s ease;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -57,9 +59,8 @@ nav a {
     height: 30px;
     width: 32px;
     padding: 0.4rem 0.8rem;
-    border: 2px solid var(--primary);
+    border: none;
     background: transparent;
-    background: var(--dark);
     border-radius: 6px;
     color: var(--primary);
     font-weight: 500;
