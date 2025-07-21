@@ -35,7 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
-    background-color: transparent;
+    background: transparent;
 }
 
 .logo {
@@ -71,6 +71,12 @@ nav a {
 .theme-toggle:hover {
     background: var(--primary);
     color: white;
+}
+.theme-toggle i{
+    transition: transform 0.4s ease;
+}
+body.dark-mode .theme-toggle i {
+    transform: rotate(180deg); 
 }
 
 .fa-moon {
@@ -113,12 +119,12 @@ nav a {
 }
 
 .btn.primary {
-    background-color: var(--primary);
+    background: var(--primary);
     color: white;
 }
 
 .btn.primary:hover {
-    background-color: #2563eb;
+    background: #2563eb;
 }
 
 .btn.outline {
@@ -198,7 +204,7 @@ nav a {
 }
 
 .skills-list span {
-    background-color: #3b82f6;
+    background: #3b82f6;
     color: white;
     padding: 0.2rem 1rem;
     border-radius: 50px;
@@ -208,13 +214,13 @@ nav a {
 }
 
 .skills-list span:hover {
-    background-color: #2563eb;
+    background: #2563eb;
 }
 
 /* Project */
 .projects-section {
     padding: 5rem 2rem;
-    background: var(--background);
+    background: inherit;
 }
 
 .projects-container {
@@ -369,14 +375,18 @@ form {
     flex-direction: column;
     gap: 1.5rem;
 }
-
+label{
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    color: var(--dark);
+}
 input,
 textarea {
     width: 100%;
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid #d1d5db;
-    background: var(--background);
+    background: var(--light);
     color: var(--dark);
     font-size: 1rem;
 }
@@ -409,7 +419,6 @@ textarea:focus {
 
 /* FOOTER */
 .site-footer {
-    background: var(--background);
     text-align: center;
     color: var(--gray);
     font-size: 0.95rem;

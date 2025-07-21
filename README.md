@@ -45,6 +45,7 @@ Below is a snapshot of the responsive design on tablet view.
 
 ---
 
+<pre>
 ## 📂 Folder Structure
 
 Kachi-Portfolio/
@@ -57,8 +58,8 @@ Kachi-Portfolio/
 │ └── Kachi_Resume.pdf
 ├── index.html
 └── README.md
-
+</pre>
 ---
 
-Designed and developed by [Onyekachi Okwuolisa](https://github.com/on2onyekachi)  
+Designed and developed by [**Onyekachi Okwuolisa**](https://github.com/on2onyekachi)  
 Feel free to star, or suggest ideas.
